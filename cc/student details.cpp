@@ -4,8 +4,8 @@ using namespace std;
 class person
 {
 public:
-	int age = ;
-	char name[20]=;
+	int age ;
+	char name[20];
 	void stu(int a,char *n)
 	{
 		age  = a;
@@ -24,12 +24,15 @@ public:
 };
 class student :public person
 {
+public:
 	float percentage;
 	void per(float p)
 	{
+		int a;
+		char n[20];
 		percentage = p;
 	   cout<<"DETAULS OF THE STUDETS ARE:";
-	   stu();
+	   stu(a,n);
 	cout<<"percentage :"<<percentage;
 	    
 	}
@@ -51,5 +54,8 @@ public:
 };
 int main()
 {
-	
+	student s1;
+	teacher t1;
+	s1.stu(18,"dharmesh");
+	s1.per(50.00);
 }
